@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pratap Singh - Resume</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0f172a;
+            --blue: #2563eb;
+            --sidebar-bg: #f8fafc;
+            --text: #334155;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --bubble-bg: #e0f2fe;
+            --bubble-text: #0284c7;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #525252;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: var(--white);
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 34% 66%;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        }
+
+        .sidebar {
+            background: var(--sidebar-bg);
+            padding: 40px 25px;
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-title {
+            font-family: 'Merriweather', serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--navy);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--blue);
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+        }
+
+        .contact-row {
+            font-size: 12.5px;
+            margin-bottom: 10px;
+        }
+
+        .contact-row a {
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .edu-item { margin-bottom: 18px; }
+        .edu-degree { font-weight: 700; color: var(--blue); }
+        .edu-inst { font-weight: 600; font-size: 13px; }
+        .edu-meta { font-size: 12px; color: var(--text-light); }
+
+        .skill-cat {
+            font-family: 'Merriweather', serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .skill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .skill-bubble {
+            background: var(--bubble-bg);
+            color: var(--bubble-text);
+            font-size: 11.5px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .main { padding: 45px 40px; }
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--navy);
+        }
+
+        .role {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            color: var(--blue);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 18px;
+            color: var(--navy);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .section hr {
+            height: 2px;
+            border: none;
+            background: linear-gradient(to right, var(--blue), var(--border));
+            margin-bottom: 12px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .project {
+            border-left: 3px solid var(--blue);
+            padding-left: 10px;
+        }
+
+        .project-title {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--navy);
+        }
+
+        .project-tech {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+
+        .project-desc {
+            font-size: 12.5px;
+        }
+
+        @media print {
+            body { background: none; }
+            .resume-container { box-shadow: none; margin: 0; width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="resume-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div>
+            <div class="sidebar-title">Contact</div>
+            <div class="contact-row">📞 7983495081</div>
+            <div class="contact-row">📧 adi0103singh@gmail.com</div>
+            <div class="contact-row">📍 Ghaziabad, UP, India</div>
+            <div class="contact-row">
+                🔗 <a href="https://github.com/Aditya010305" target="_blank">github.com/Aditya010305</a>
+            </div>
+            <div class="contact-row">
+                🔗 <a href="https://www.linkedin.com/in/aditya-pratap-singh-39b747327" target="_blank">
+                linkedin.com/in/aditya-pratap-singh-39b747327</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="sidebar-title">Education</div>
+
+            <div class="edu-item">
+                <div class="edu-degree">B.Tech Computer Science (CS)</div>
+                <div class="edu-inst">KIET Group of Institutions</div>
+                <div class="edu-meta">2024 – Present</div>
+                <div class="edu-inst">CGPA - 8.6</div>
+            </div>
+
+        <div>
+            <div class="sidebar-title">Technical Skills</div>
+
+            <span class="skill-cat">Web Development</span>
+            <div class="skill-container">
+                <span class="skill-bubble">HTML</span>
+                <span class="skill-bubble">CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">Node.js</span>
+            </div>
+
+            <span class="skill-cat">Blockchain</span>
+            <div class="skill-container">
+                <span class="skill-bubble">Blockchain Fundamentals</span>
+                <span class="skill-bubble">Ethereum</span>
+                <span class="skill-bubble">Solidity</span>
+                <span class="skill-bubble">Smart Contracts (Basic)</span>
+            </div>
+            <span class="skill-cat">Programming & DSA</span>
+            <div class="skill-container">
+                <span class="skill-bubble">Java</span>
+                <span class="skill-bubble">Data Structures</span>
+                <span class="skill-bubble">Algorithms</span>
+            </div>
+
+            <span class="skill-cat">Tools</span>
+            <div class="skill-container">
+                <span class="skill-bubble">Git</span>
+                <span class="skill-bubble">GitHub</span>
+                <span class="skill-bubble">VS Code</span>
+            </div>
+        </div>
+
+        <div>
+            <div class="sidebar-title">Certifications</div>
+            <div class="contact-row">AWS Certified Cloud Practitioner</div>
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header>
+            <h1>Aditya Pratap Singh</h1>
+            <div class="role">B.Tech CS Student | Web & Blockchain Enthusiast</div>
+        </header>
+
+        <section class="section">
+            <h2>Profile</h2>
+            <hr>
+            <p>
+                Computer Science undergraduate focused on web development and blockchain technology.
+                Hands-on experience with basic Ethereum smart contracts and Solidity while building strong
+                foundations in JavaScript, Node.js, and cloud fundamentals. Interested in decentralized
+                applications and backend systems.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Learning & Practice</h2>
+            <hr>
+
+            <div class="projects-grid">
+
+                <div class="project">
+                    <div class="project-title">Web Development Practice</div>
+                    <div class="project-tech">HTML • CSS • JavaScript</div>
+                    <div class="project-desc">
+                        Practiced building structured web pages, responsive layouts, and interactive components while learning core web technologies.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Backend Concepts with Node.js</div>
+                    <div class="project-tech">Node.js • JavaScript</div>
+                    <div class="project-desc">
+                        Studied backend fundamentals including server architecture, routing, request–response flow, and REST API concepts.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Basic Smart Contracts (FundMe)</div>
+                    <div class="project-tech">Solidity • Ethereum</div>
+                    <div class="project-desc">
+                        Implemented basic Ethereum smart contracts such as FundMe to understand contract structure,
+                        functions, mappings, and ETH transfers using Solidity.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <h2>Interests</h2>
+            <hr>
+            <p>Blockchain Technology, Smart Contracts, Web Development, Cloud Computing, Hackathons</p>
+        </section>
+
+    </main>
+</div>
+</body>
+</html>
